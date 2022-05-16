@@ -1,0 +1,26 @@
+<button class="btn2" mat-raised-button color="secondary" (click)="menu()">Main menu</button>
+<div class="box">
+  <h1>Search</h1>
+  <input [(ngModel)]="cname" type="text" name="name" placeholder="Customer name" class="text-input" />
+  <button class="btn2" mat-raised-button color="secondary" (click)="slbu()">Search lendings by customer name</button>
+  <br>
+  <br>
+  <div class="box1" [hidden]="hiddenb">
+    <ul id="list">
+      <li *ngFor="let c of lendings" >Id: {{c.id}} Title: {{c.title}} Publisher: {{c.publisher}} Price: {{c.price}}</li>
+    </ul>
+  </div>
+
+  <br>
+  <br>
+  <input [(ngModel)]="bid" type="text" name="name" placeholder="Book id" class="text-input" />
+  <button class="btn2" mat-raised-button color="secondary" (click)="slbb()">Search by book id</button>
+  <br>
+  <br>
+  <div class="box1" [hidden]="hiddenc">
+    <ul id="list1">
+      <li *ngFor="let c of lendings2" >Id: {{c.id}} Name: {{c.name}} CNP: {{c.cnp}} Phone: {{c.phone}} Email: {{c.email}} Adress: {{c.address}}</li>
+    </ul>
+  </div>
+</div> <!-- End Box -->
+

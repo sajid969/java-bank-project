@@ -1,0 +1,17 @@
+<button class="btn2" mat-raised-button color="secondary" (click)="menu()">Main menu</button>
+<div class="box">
+  <h1>Books</h1>
+  <button class="btn2" mat-raised-button color="secondary" (click)="addBook()">Add book</button>
+  <br>
+  <br>
+  <div class="box1" [hidden]="hidden">
+    <ul id="list">
+      <li *ngFor="let c of books" >Id: {{c.id}} Title: {{c.title}} Publisher: {{c.publisher}} Price: {{c.price}}</li>
+    </ul>
+  </div>
+
+  <br>
+  <br>
+
+</div> <!-- End Box -->
+

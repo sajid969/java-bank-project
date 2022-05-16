@@ -1,0 +1,22 @@
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:700,600' rel='stylesheet' type='text/css'>
+
+<form method="get" action="index.html">
+  <div class="box">
+    <h1>Add Customer Form:</h1>
+
+
+    <input [(ngModel)]="customer.name" type="text" name="name" placeholder="name" class="text-input" />
+    <input [(ngModel)]="customer.phone" type="text" name="phone" placeholder="phone number" class="text-input" />
+    <input [(ngModel)]="customer.email" type="email" name="email" placeholder="email" class="text-input" />
+    <input [(ngModel)]="customer.address" type="text" name="address" placeholder="address" class="text-input" />
+    <input [(ngModel)]="customer.cnp" type="text" name="cnp" placeholder="cnp" class="text-input" />
+
+    <button class="btn2" mat-raised-button color="secondary" (click)="do()">Add Customer</button>
+
+    <br>
+    <br>
+
+
+  </div> <!-- End Box -->
+
+</form>

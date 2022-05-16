@@ -1,0 +1,20 @@
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:700,600' rel='stylesheet' type='text/css'>
+
+<form method="get" action="index.html">
+  <div class="box">
+    <h1>Add lending Form:</h1>
+
+
+    <input [(ngModel)]="lending.customerId" type="text" name="customerId" placeholder="customerId" class="text-input" />
+    <input [(ngModel)]="lending.bookId" type="text" name="bookId" placeholder="bookId" class="text-input" />
+    <input [(ngModel)]="lending.penalty" type="text" name="penalty" placeholder="penalty" class="text-input" />
+
+    <button class="btn2" mat-raised-button color="secondary" (click)="do()">Add lending</button>
+
+    <br>
+    <br>
+
+
+  </div> <!-- End Box -->
+
+</form>

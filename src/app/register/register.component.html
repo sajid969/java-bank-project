@@ -1,0 +1,27 @@
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:700,600' rel='stylesheet' type='text/css'>
+
+<form method="get" action="index.html">
+  <div class="box">
+    <h1>Login</h1>
+
+
+    <input [(ngModel)]="registerRequest.name" type="text" name="name" placeholder="name" class="text-input" />
+    <input [(ngModel)]="registerRequest.phoneNumber" type="text" name="phone" placeholder="phone number" class="text-input" />
+    <input [(ngModel)]="registerRequest.email" type="email" name="email" placeholder="email" class="text-input" />
+    <input [(ngModel)]="registerRequest.address" type="text" name="address" placeholder="address" class="text-input" />
+    <input [(ngModel)]="registerRequest.cnp" type="text" name="cnp" placeholder="cnp" class="text-input" />
+    <input [(ngModel)]="registerRequest.username" type="text" name="username" placeholder="username" class="text-input" />
+    <input [(ngModel)]="registerRequest.password" type="password" name="password" placeholder="password" class="text-input" />
+
+    <button class="btn2" mat-raised-button color="secondary" (click)="do()">Register</button>
+
+    <br>
+    <br>
+
+    <!--<a href="#"><div class="btn">Sign In</div></a>
+
+    <a href="#"><div id="btn2">Sign Up</div></a>-->
+
+  </div> <!-- End Box -->
+
+</form>

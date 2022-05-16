@@ -1,0 +1,20 @@
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:700,600' rel='stylesheet' type='text/css'>
+
+<form method="get" action="index.html">
+  <div class="box">
+    <h1>Add Book Form:</h1>
+
+
+    <input [(ngModel)]="Book.title" type="text" name="title" placeholder="title" class="text-input" />
+    <input [(ngModel)]="Book.publisher" type="text" name="publisher" placeholder="publisher" class="text-input" />
+    <input [(ngModel)]="Book.price" name="price" placeholder="price" class="text-input" />
+
+    <button class="btn2" mat-raised-button color="secondary" (click)="do()">Add Book</button>
+
+    <br>
+    <br>
+
+
+  </div> <!-- End Box -->
+
+</form>

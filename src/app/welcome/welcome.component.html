@@ -1,0 +1,32 @@
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:700,600' rel='stylesheet' type='text/css'>
+
+
+<div class="box">
+  <h1>Welcome</h1>
+
+  <button *ngIf="admin == false" class="btn2" mat-raised-button color="secondary" (click)="viewProfile()">View Profile</button>
+  <br>
+  <button *ngIf="admin == false" class="btn2" mat-raised-button color="secondary" (click)="editProfile()">Edit Profile</button><br>
+  <button *ngIf="admin == false" class="btn2" mat-raised-button color="secondary" (click)="customers()">Customers</button><br>
+  <button *ngIf="admin == false" class="btn2" mat-raised-button color="secondary" (click)="books()">Books</button><br>
+  <button *ngIf="admin == false" class="btn2" mat-raised-button color="secondary" (click)="lendings()">Lendings</button><br>
+  <button *ngIf="admin == false" class="btn2" mat-raised-button color="secondary" (click)="search()">Search</button><br>
+  <button *ngIf="admin" class="btn2" mat-raised-button color="secondary" (click)="import()">IMPORT STUFF</button><br>
+  <button class="btn2" mat-raised-button color="secondary" (click)="logout()">Logout</button><br>
+
+  <br>
+  <br>
+
+
+</div> <!-- End Box -->
+
+<div class="box" [hidden]="hidden">
+  <p>name</p>
+  <h3>Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{userModel.name}}</h3>
+  <h3>PhoneNumber:&nbsp;{{userModel.phoneNumber}}</h3>
+  <h3>Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{userModel.email}}</h3>
+  <h3>Address:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{userModel.address}}</h3>
+  <h3>CNP:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{userModel.cnp}}</h3>
+</div>
+
+

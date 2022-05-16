@@ -1,0 +1,17 @@
+<button class="btn2" mat-raised-button color="secondary" (click)="menu()">Main menu</button>
+<div class="box">
+  <h1>Lending</h1>
+  <button class="btn2" mat-raised-button color="secondary" (click)="addLending()">Add lending</button>
+  <br>
+  <br>
+  <div class="box1" [hidden]="hidden">
+    <ul id="list">
+      <li *ngFor="let c of Lendings" >CustomerId: {{c.cid}} Name: {{c.name}} BookId: {{c.bid}} Title: {{c.title}} Penalty: {{c.penalty}} Return Date: {{c.return_date}}</li>
+    </ul>
+  </div>
+
+  <br>
+  <br>
+
+</div> <!-- End Box -->
+
